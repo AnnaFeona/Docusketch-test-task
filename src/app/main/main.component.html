@@ -1,2 +1,8 @@
-<button (click)="createIcon()">Create</button><br><ng-container #host></ng-container>
-<fa-icon *ngIf="randomIcon" [icon]="randomIcon" [style]="{ color: 'red' }"></fa-icon>
+<button class="change_icon__btn" (click)="changeIcon()">{{ buttonTitle }}</button>
+
+<ng-container *ngIf="randomIcon">
+  <fa-icon [icon]="randomIcon"
+            size="6x" [fixedWidth]="true"
+            [style]="{ color: '#555' }"
+            class="icon__container"></fa-icon>
+</ng-container>

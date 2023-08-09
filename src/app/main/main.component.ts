@@ -16,15 +16,19 @@ export class MainComponent {
 
   private iconArray: IconDefinition[] = [];
 
+  public buttonTitle = 'Click me!';
+
   constructor() {
     for (const item in this.iconList) {
       this.iconArray.push(this.iconList[item]);
     }
   }
 
-  createIcon() {
+  changeIcon() {
     const index = Math.floor(Math.random() * this.iconArray.length);
-
-    this.randomIcon = this.iconArray[index];
+    setTimeout(() =>{
+      this.randomIcon = this.iconArray[index];
+      this.buttonTitle = 'Change icon';
+    }, 3000);
   }
 }
