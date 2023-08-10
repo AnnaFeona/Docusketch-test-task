@@ -5,6 +5,7 @@ import AppComponent from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
+import { IconsService } from './services/icons.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { MainComponent } from './main/main.component';
     BrowserModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [IconsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
