@@ -3,7 +3,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: calc(100vh - 100px);
+  gap: 10px;
+
+  height: calc(100vh - 60px);
+  min-height: 220px;
 
   .change_icon__btn {
     width: 260px;
@@ -33,6 +36,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @media (min-height: 320px) {
+    
   }
 
   @media (min-height: 475px) {
